@@ -1,0 +1,101 @@
+<!DOCTYPE >
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mukul Gupta</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+  <!-- Load Icon -->
+  <link href="./assets/icon/icon_m.png" rel="icon" type="image/png" >
+</head>
+<body>
+  <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+  <header class="page__header">
+    <nav class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar__list"></ul>
+    </nav>
+  </header>
+  <main>
+    <header class="main__hero">
+      <h1>Hello :)<br> I'm Mukul Gupta</h1>
+    </header>
+    <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <section id="section1" data-nav="About" class="your-active-class">
+      <div class="landing__container">
+        <h2>About Me</h2>
+        <p>As a dedicated Software Developer with a strong passion for technology, I thrive on solving complex challenges and continuously expanding my skill set. With a daily commitment to coding, I've honed my problem-solving abilities and embraced a diverse range of projects, from web development to algorithmic problem-solving on platforms like LeetCode and Geeksforgeeks.
+          <br>
+          <br>
+          My expertise in programming languages, including C++ Python, Javascript allows me to craft efficient and innovative solutions that drive success in the ever-evolving tech landscape. I'm driven by a relentless curiosity, always eager to explore emerging technologies and stay at the forefront of industry trends.
+          <br>
+          <br>
+          In addition to my technical pursuits, I'm an avid chess player and enjoy exploring artistic endeavors during my free time. I'm also passionate about international relations and keep a close eye on current affairs. Additionally, I've been delving into the world of finance, delving into stock market intricacies and money management strategies.
+          </p>
+
+        <p>I'm excited to connect with fellow professionals who share a similar enthusiasm for technology and problem-solving. Let's collaborate and make a positive impact in the world of software development together.</p>
+      </div>
+    </section>
+    <section id="section2" data-nav="Projects">
+      <div class="landing__container">
+        <h2>My Projects</h2>
+        <h3>Notes Maker Webapp</h3>
+        <p>
+          Technologies Used: Python, Django, HTML, Bootstrap CSS, Azure App Service, Github Actions
+          <br>
+          <br>
+          • Created a Web application using Django to take notes on the go with simple and user friendly UI.
+          <br>
+          • Used the Django-Admin for User Authentication and User Management for saving notes of each user separately.
+          <br>
+          • Implemented CRUD operations to save, delete, edit and retrieve the notes to/from SQLite Database.
+          <br>
+          • Used Github Actions CI/CD platform to deploy the app to Azure App Service on Linux.
+          <br>
+        </p>
+        <br><br><br>
+
+        <h3>Facenforce</h3>
+        <p>
+          Technologies Used: Node.js, Faceapi.js, HTML, CSS, JavaScript, Github
+          <br>
+          <br>
+          • Developed a face-recognition web-app using faceapi.js, a pre-trained model and node.js to detect and recognize
+          multiple faces in an image.
+          <br>
+          • Implemented labled-image upload with folder structure for face registration to simplify the client side UI.
+          <br>
+        </p>
+        <br><br><br>
+      </div>
+    </section>
+    <section id="section3" data-nav="Contact">
+      <div class="landing__container">
+        <h2>Contact Me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
+
+        <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
+      </div>
+    </section>
+    <section id="section4" data-nav="My Blog">
+      <div class="landing__container">
+        <h2>My Blog</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
+
+        <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="page__footer">
+    <p>&copy Codemukul</p>
+  </footer>
+  <script src="./js/app.js"></script>
+</body>
+</html>
